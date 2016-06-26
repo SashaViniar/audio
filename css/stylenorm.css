@@ -1,0 +1,8 @@
+body {
+    background-image: url("http://www.bfoto.ru/foto/3d_poly/bfoto_ru_4307.jpg") ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}

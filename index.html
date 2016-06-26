@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/stylenorm.css" type="text/css" />
+
+
+</head>
+
+<body class="container">
+
+    <div class="audio-player">
+        <h1>Track1</h1>
+        <audio class="audio-player1" src="track1.mp3" type="audio/mp3" controls="controls" ></audio>
+    </div>
+    
+    <div class="audio-player">
+        <h1>Track2</h1>
+        <audio class="audio-player1" src="track2.mp3" type="audio/mp3" controls="controls" ></audio>
+    </div>
+    
+    <div class="audio-player">
+        <h1>Track3</h1>
+        <audio class="audio-player1" src="track3.mp3" type="audio/mp3" controls="controls" ></audio>
+    </div>
+    
+    <div class="audio-player">
+        <h1>Track4</h1>
+        <audio class="audio-player1" src="track4.mp3" type="audio/mp3" controls="controls" ></audio>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.audio-player1').mediaelementplayer({
+                alwaysShowControls: true,
+                features: ['playpause', 'volume', 'progress'],
+                audioVolume: 'horizontal',
+                audioWidth: 400,
+                audioHeight: 120
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
